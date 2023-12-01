@@ -1,0 +1,7 @@
+{
+  "name": "responsi2mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

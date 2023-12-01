@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { AutoLoginGuard } from './guards/auto-login.guard';
+import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
   {
@@ -8,8 +10,18 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full'
+  },
+  { 
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule),
+    canLoad: [AutoLoginGuard]
+  },
+  {
+    path: 'kontak',
+    loadChildren: () => import('./kontak/kontak.module').then( m => m.KontakPageModule),
+    canLoad: [AuthGuard]
   },
 ];
 

@@ -18,5 +18,5 @@
 #### Halaman Edit Kontak
 ![mobile (6)](https://github.com/wildannouval/responsiMobile2_wildannouval/assets/95664525/4fa23fa0-5020-4a1a-9f63-8a89de545317)
 
-#### Halaman Hapus Kontak
+#### Halaman Hapus Kontak dan Logout
 ![mobile (9)](https://github.com/wildannouval/responsiMobile2_wildannouval/assets/95664525/6687ec68-9a1e-43af-a29f-7241513864a6)
